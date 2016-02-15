@@ -108,6 +108,11 @@ $attributes= array(
 );
 $vehicle = $builder->createVehicle($plugin, $attributes);
 
+$vehicle->resolve('file', array(
+	'source' => $sources['source_core'],
+	'target' => "return MODX_CORE_PATH . 'components/';",
+));
+
 /*$vehicle->resolve('php',array(
 	'source' => $sources['data'].'transport.resolver.php',
 	'name' => 'resolve',

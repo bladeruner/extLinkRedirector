@@ -1,0 +1,1 @@
+MODX Revolution plug-in for external links
